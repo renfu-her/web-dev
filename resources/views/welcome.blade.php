@@ -11,7 +11,7 @@
 
 <div class="container mt-5">
     <h2 class="mb-4">Laravel 7|8 Yajra Datatables Example</h2>
-    <table class="table table-bordered yajra-datatable">
+    <table class="table table-bordered" id="dataTable">
         <thead>
             <tr>
                 <th>No</th>
@@ -37,7 +37,7 @@
 <script type="text/javascript">
   $(function () {
 
-    var table = $('.yajra-datatable').DataTable({
+    var table = $('#dataTable').DataTable({
         processing: true,
         serverSide: true,
         ajax: "{{ route('students.list') }}",
