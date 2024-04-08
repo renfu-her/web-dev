@@ -41,6 +41,9 @@
     $(function() {
 
         var table = $('#dataTable').DataTable({
+            language: {
+                url: '//cdn.datatables.net/plug-ins/2.0.3/i18n/zh-HANT.json',
+            },
             processing: true,
             serverSide: true,
             ajax: "{{ route('students.list') }}",
