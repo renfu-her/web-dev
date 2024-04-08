@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\IndexController;
 
 
-Route::grt('/', function(){
+Route::get('/', function(){
     return view('welcome');
 });
 
