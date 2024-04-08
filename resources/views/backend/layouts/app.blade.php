@@ -9,7 +9,7 @@
     <meta name="author" content="" />
     <title>Admin 管理系統</title>
     <link href="//cdn.datatables.net/2.0.3/css/dataTables.dataTables.min.css" rel="stylesheet" type="text/css">
-
+    <link href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
     <link href="{{ asset('admin/css/styles.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin/css/custom.css?t=' . time()) }}" rel="stylesheet" />
 
@@ -145,6 +145,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js" type="text/javascript"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script src="{{ asset('admin/js/scripts.js') }}"></script>
 
     @yield('js')
