@@ -9,6 +9,6 @@ Route::get('/', function(){
     return view('welcome');
 });
 
-Route::group(['prefix' => 'backend.'], function(){
+Route::group(['prefix' => 'backend', 'name' => 'backend.'], function(){
     Route::get('/', [IndexController::class, 'index'])->name('backend.home');
 });
