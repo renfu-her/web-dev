@@ -38,30 +38,31 @@
 @section('js')
     <script>
         var table = $('#dataTable').DataTable({
-                    language: {
-                        url: '//cdn.datatables.net/plug-ins/2.0.3/i18n/zh-HANT.json',
-                    },
-                    processing: true,
-                    serverSide: true,
-                    ajax: "{{ route('backend.users.list') }}",
-                    columns: [{
-                            data: 'DT_RowIndex',
-                            name: 'DT_RowIndex'
-                        },
-                        {
-                            data: 'name',
-                            name: 'name'
-                        },
-                        {
-                            data: 'email',
-                            name: 'email'
-                        },
-                        {
-                            data: 'action',
-                            name: 'action',
-                            orderable: true,
-                            searchable: true
-                        },
-                    ]
+            language: {
+                url: '//cdn.datatables.net/plug-ins/2.0.3/i18n/zh-HANT.json',
+            },
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('backend.users.list') }}",
+            columns: [{
+                    data: 'DT_RowIndex',
+                    name: 'DT_RowIndex'
+                },
+                {
+                    data: 'name',
+                    name: 'name'
+                },
+                {
+                    data: 'email',
+                    name: 'email'
+                },
+                {
+                    data: 'action',
+                    name: 'action',
+                    orderable: true,
+                    searchable: true
+                },
+            ]
+        });
     </script>
 @endsection
