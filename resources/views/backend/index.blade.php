@@ -5,7 +5,7 @@
         <div class="container-fluid px-4">
             <h1 class="mt-4">Tables</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
                 <li class="breadcrumb-item active">Tables</li>
             </ol>
             <div class="card mb-4">
@@ -14,7 +14,7 @@
                     DataTable Example
                 </div>
                 <div class="card-body">
-                    <table id="datatablesSimple">
+                    <table id="dataTable">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -505,8 +505,8 @@
 
 @section('js')
     <script>
-        
-        let table = new DataTable('#datatablesSimple');
+
+        let table = new DataTable('#dataTable');
 
     </script>
 @endsection
