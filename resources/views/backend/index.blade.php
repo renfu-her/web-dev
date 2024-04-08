@@ -3,15 +3,15 @@
 @section('content')
     <main>
         <div class="container-fluid px-4">
-            <h1 class="mt-4">Tables</h1>
+            <h1 class="mt-4">使用者管理</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="/backend">Dashboard</a></li>
-                <li class="breadcrumb-item active">Tables</li>
+                <li class="breadcrumb-item"><a href="/backend">系統</a></li>
+                <li class="breadcrumb-item active">使用者管理</li>
             </ol>
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    DataTable Example
+                    使用者管理
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered" id="dataTable">
