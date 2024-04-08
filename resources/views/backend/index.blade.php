@@ -505,9 +505,8 @@
 
 @section('js')
     <script>
-        let dataTable = new DataTable("#datatablesSimple", {
-            searchable: false,
-            fixedHeight: true,
-        });
+        
+        let table = new DataTable('#datatablesSimple');
+
     </script>
 @endsection
