@@ -14,7 +14,7 @@ class IndexController extends Controller
         return view('backend.index');
     }
 
-    public function getStudents(Request $request)
+    public function getUsers(Request $request)
     {
         if ($request->ajax()) {
             $data = User::latest()->get();
