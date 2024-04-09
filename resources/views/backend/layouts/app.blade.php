@@ -12,6 +12,7 @@
     <link href="https://cdn.datatables.net/2.0.3/css/dataTables.bootstrap5.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.1/css/responsive.dataTables.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css">
+    
     <link href="{{ asset('admin/css/styles.css') }}" rel="stylesheet" />
     <link href="{{ asset('admin/css/custom.css?t=' . time()) }}" rel="stylesheet" />
 
