@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use DataTables;
 
-class IndexController extends Controller
+class UserController extends Controller
 {
     public function index()
     {
