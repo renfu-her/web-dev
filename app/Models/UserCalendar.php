@@ -9,7 +9,7 @@ class UserCalendar extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected  $fillable = [
         'user_id',
         'date',
     ];

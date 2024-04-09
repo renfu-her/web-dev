@@ -9,7 +9,7 @@ class UserGroup extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected  $fillable = [
         'name',
         'group_level'
     ];

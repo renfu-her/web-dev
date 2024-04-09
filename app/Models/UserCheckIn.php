@@ -9,7 +9,7 @@ class UserCheckIn extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected  $fillable = [
         'user_id',
         'date',
         'check_in',

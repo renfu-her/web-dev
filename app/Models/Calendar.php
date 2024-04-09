@@ -9,7 +9,7 @@ class Calendar extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected  $fillable = [
         'date',
         'description',
         'type'
