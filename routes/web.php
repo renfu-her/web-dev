@@ -19,6 +19,6 @@ Route::get('students/list', [StudentController::class, 'getStudents'])->name('st
 Route::group(['prefix' => 'backend', 'name' => 'backend.'], function(){
     Route::get('/', [IndexController::class, 'index'])->name('backend.home');
 
-    Route::get('/', [IndexController::class, 'index'])->name('backend.users');
+    Route::resource('/', IndexController::class);
     Route::get('users/list', [IndexController::class, 'getUsers'])->name('backend.users.list');
 });

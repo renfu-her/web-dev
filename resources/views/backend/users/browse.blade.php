@@ -14,7 +14,7 @@
                     使用者管理
                 </div>
                 <div class="card-body table-responsive">
-                    <table class="table table-bordered" id="dataTable">
+                    <table class="table table-bordered" style="width: 100%" id="dataTable">
                         <thead>
                             <tr>
                                 <th style="width: 5%">No</th>

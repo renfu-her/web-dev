@@ -15,6 +15,11 @@ class IndexController extends Controller
         return view('backend.index');
     }
 
+    public function store()
+    {
+        
+    }
+
     public function getUsers(Request $request)
     {
         if ($request->ajax()) {
