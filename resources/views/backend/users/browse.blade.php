@@ -78,12 +78,12 @@
                     render: function(data, type, row) {
                         return '<a href="" target="_blank">' + data + '</a>'
                     },
-                    className: "min-tablet-l"
+                    className: "tablet-l"
                 },
                 {
                     data: 'user_group',
                     name: 'user_group',
-                    className: "min-tablet-l"
+                    className: "tablet-l"
                 },
                 {
                     data: 'action',
