@@ -15,7 +15,7 @@
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered" style="width: 100%" id="dataTable">
-                        <thead>
+                        {{-- <thead>
                             <tr>
                                 <th style="width: 30%">名稱</th>
                                 <th style="width: 30%">E-mail</th>
@@ -24,7 +24,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                        </tbody>
+                        </tbody> --}}
                     </table>
                 </div>
             </div>
@@ -70,24 +70,24 @@
             columns: [
                 {
                     data: 'name',
-                    name: 'name'
+                    title: '姓名'
                 },
                 {
                     data: 'email',
-                    name: 'email',
+                    title: 'E-mail',
                     render: function(data, type, row) {
                         return '<a href="" target="_blank">' + data + '</a>'
                     },
-                    className: "tablet-l"
+                    className: "min-tablet-l"
                 },
                 {
                     data: 'user_group',
-                    name: 'user_group',
-                    className: "tablet-l"
+                    title: '職級',
+                    className: "min-tablet-l"
                 },
                 {
                     data: 'action',
-                    name: 'action',
+                    title: '管理',
                     orderable: true,
                     searchable: true
                 },
