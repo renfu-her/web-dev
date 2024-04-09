@@ -13,8 +13,8 @@
                     <i class="fas fa-table me-1"></i>
                     使用者管理
                 </div>
-                <div class="card-body">
-                    <table class="table table-bordered table-responsive" id="dataTable">
+                <div class="card-body table-responsive">
+                    <table class="table table-bordered" id="dataTable">
                         <thead>
                             <tr>
                                 <th>No</th>
