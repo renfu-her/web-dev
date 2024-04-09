@@ -134,6 +134,8 @@
 
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.1/js/dataTables.responsive.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.1/js/responsive.bootstrap5.js"></script>
 
     <script src="{{ asset('admin/js/scripts.js') }}"></script>
 
