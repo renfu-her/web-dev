@@ -14,13 +14,13 @@
                     使用者管理
                 </div>
                 <div class="card-body">
-                    <table class="table table-bordered" id="dataTable">
+                    <table class="table table-bordered table-responsive" id="dataTable">
                         <thead>
                             <tr>
                                 <th>No</th>
                                 <th>名稱</th>
                                 <th>E-mail</th>
-                                <th>Action</th>
+                                <th>管理</th>
                             </tr>
                         </thead>
                         <tbody>

@@ -128,8 +128,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js" type="text/javascript"></script>
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
     <script src="{{ asset('admin/js/scripts.js') }}"></script>
 
