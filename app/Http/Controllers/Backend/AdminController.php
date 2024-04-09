@@ -18,6 +18,7 @@ class AdminController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
+
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
@@ -34,6 +35,7 @@ class AdminController extends Controller
     {
 
         session()->forget(['adminLogin', 'users', 'admin-email']);
+        Auth::logout();
         return view('backend/login');
     }
 }

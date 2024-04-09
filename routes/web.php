@@ -13,7 +13,7 @@ Route::get('/', function () {
 });
 
 
-Route::group(['prefix' => 'backend', 'name' => 'backend.'], function () {
+Route::group(['prefix' => 'backend', 'name' => 'backend.', 'middleware' => 'auth.check'], function () {
     Route::get('/', [UserController::class, 'index'])->name('backend.home');
 
     Route::get('/', [UserController::class, 'index'])->name('backend.users');

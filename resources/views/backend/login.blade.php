@@ -24,19 +24,19 @@
                                     <h3 class="text-center font-weight-light my-4">登入</h3>
                                 </div>
                                 <div class="card-body">
-                                    <form>
+                                    <form method="post" action="{{ route('backend.login') }}">
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputEmail" type="email"
+                                            <input class="form-control" id="inputEmail" type="email" name="email"
                                                 placeholder="name@example.com" />
                                             <label for="inputEmail">E-mail</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password"
+                                            <input class="form-control" id="inputPassword" type="password" name="password"
                                                 placeholder="Password" />
                                             <label for="inputPassword">密碼</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="btn btn-primary" href="index.html">登入</a>
+                                            <button type="submit" class="btn btn-primary" >登入</button>
                                         </div>
                                     </form>
                                 </div>
