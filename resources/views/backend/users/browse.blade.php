@@ -17,10 +17,10 @@
                     <table class="table table-bordered" style="width: 100%" id="dataTable">
                         <thead>
                             <tr>
-                                <th style="width: 5%">No</th>
-                                <th style="width: 40%">名稱</th>
-                                <th style="width: 45%">E-mail</th>
-                                <th style="width: 130px">管理</th>
+                                <th style="width: 30%">名稱</th>
+                                <th style="width: 30%">E-mail</th>
+                                <th style="width: 30%">等級</th>
+                                <th style="width: 150px">管理</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -43,18 +43,48 @@
             },
             processing: true,
             serverSide: true,
+            responsive: {
+                breakpoints: [{
+                        name: 'desktop',
+                        width: Infinity
+                    },
+                    {
+                        name: 'tablet-l',
+                        width: 1024
+                    }, //原本是768~1024不含768
+                    {
+                        name: 'tablet-p',
+                        width: 767
+                    }, //
+                    {
+                        name: 'mobile-l',
+                        width: 480
+                    },
+                    {
+                        name: 'mobile-p',
+                        width: 320
+                    }
+                ]
+            },
             ajax: "{{ route('backend.users.list') }}",
-            columns: [{
-                    data: 'DT_RowIndex',
-                    name: 'DT_RowIndex'
-                },
+            columns: [
+
                 {
                     data: 'name',
                     name: 'name'
+                    render: function(data, type, row) {
+                        return '<a href="" target="_blank">' + data + '</a>'
+                    },
+                    className: "min-tablet-l"
                 },
                 {
                     data: 'email',
-                    name: 'email'
+                    name: 'email',
+                    className: "min-tablet-l"
+                },
+                {
+                    data: 'user_group',
+                    name: 'user_group',
                 },
                 {
                     data: 'action',
