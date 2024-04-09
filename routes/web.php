@@ -26,5 +26,5 @@ Route::group(['prefix' => 'backend', 'name' => 'backend.'], function () {
     Route::get('/logout', [AdminController::class, 'logout'])->name('backend.logout');
 });
 
-Route::get('/backend/login', [AdminController::class, 'showLogin'])->name('login');
-Route::post('/backend/login', [AdminController::class, 'login']);
+Route::get('/backend/login', [AdminController::class, 'showLogin'])->name('backend.login');
+Route::post('/backend/login', [AdminController::class, 'login'])->name('backend.logout');
