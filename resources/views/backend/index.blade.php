@@ -17,10 +17,10 @@
                     <table class="table table-bordered" id="dataTable">
                         <thead>
                             <tr>
-                                <th>No</th>
-                                <th>名稱</th>
-                                <th>E-mail</th>
-                                <th>管理</th>
+                                <th style="width: 5%">No</th>
+                                <th style="width: 40%">名稱</th>
+                                <th style="width: 45%">E-mail</th>
+                                <th style="width: 15%">管理</th>
                             </tr>
                         </thead>
                         <tbody>
