@@ -18,8 +18,7 @@ class UserController extends Controller
     public function show(Request $request, $id)
     {
 
-        $data = $request->all();
-        dd($data);
+        $this->getUsers($request);
 
     }
 
