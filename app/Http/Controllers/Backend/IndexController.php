@@ -12,12 +12,12 @@ class IndexController extends Controller
 {
     public function index()
     {
-        return view('backend.index');
+        return view('backend.users.browse');
     }
 
     public function store()
     {
-        
+
     }
 
     public function getUsers(Request $request)
