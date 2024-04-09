@@ -19,8 +19,8 @@
                             <tr>
                                 <th style="width: 5%">No</th>
                                 <th style="width: 40%">名稱</th>
-                                <th style="width: 45%">E-mail</th>
-                                <th style="width: 15%">管理</th>
+                                <th style="width: 35%">E-mail</th>
+                                <th style="width: 25%">管理</th>
                             </tr>
                         </thead>
                         <tbody>
