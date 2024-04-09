@@ -28,7 +28,7 @@ class IndexController extends Controller
             return Datatables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
-                    $actionBtn = '<a href="javascript:void(0)" class="edit btn btn-success btn-sm"><i class="fa-solid fa-pen-to-square"></i> 編輯</a>
+                    $actionBtn = '<a href="javascript:void(0)" class="edit btn btn-success btn-sm"><i class="fa-solid fa-pen-to-square"></i> 編輯</a> 
                                   <a href="javascript:void(0)" class="delete btn btn-danger btn-sm"><i class="fa-solid fa-trash-can"></i> 刪除</a>';
                     return $actionBtn;
                 })
