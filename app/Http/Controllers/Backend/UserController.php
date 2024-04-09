@@ -15,12 +15,11 @@ class UserController extends Controller
         return view('backend.users.browse');
     }
 
-    public function edit(Request $request, $id)
+    public function show(Request $request, $id)
     {
 
         $data = $request->all();
-
-        
+        dd($data);
 
     }
 
