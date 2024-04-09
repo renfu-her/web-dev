@@ -66,7 +66,7 @@
                     }
                 ]
             },
-            ajax: "{{ route('backend.users.list') }}",
+            ajax: "{{ route('users.show') }}",
             columns: [
                 {
                     data: 'name',
