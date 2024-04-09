@@ -68,18 +68,16 @@
             },
             ajax: "{{ route('backend.users.list') }}",
             columns: [
-
                 {
                     data: 'name',
                     name: 'name'
-                    render: function(data, type, row) {
-                        return '<a href="" target="_blank">' + data + '</a>'
-                    },
-                    className: "min-tablet-l"
                 },
                 {
                     data: 'email',
                     name: 'email',
+                    render: function(data, type, row) {
+                        return '<a href="" target="_blank">' + data + '</a>'
+                    },
                     className: "min-tablet-l"
                 },
                 {
