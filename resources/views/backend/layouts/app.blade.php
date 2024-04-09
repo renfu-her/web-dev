@@ -132,6 +132,9 @@
 
     <script src="//cdn.datatables.net/2.0.3/js/dataTables.min.js" type="text/javascript"></script>
     <script src="https://cdn.datatables.net/2.0.3/js/dataTables.bootstrap5.js"></script>
+    <script src="https://cdn.datatables.net/responsive/3.0.1/css/responsive.dataTables.css"></script>
+    <script src="https://cdn.datatables.net/buttons/3.0.1/css/buttons.dataTables.css"></script>
+    
     <script src="{{ asset('admin/js/scripts.js') }}"></script>
 
     @yield('js')
