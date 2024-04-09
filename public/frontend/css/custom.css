@@ -1,3 +1,5 @@
-.dataTables_wrapper .dataTables_paginate .paginate_button {
+.dt-container .dt-paging .dt-paging-button {
     padding: 2px !important;
 }
+
+

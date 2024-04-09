@@ -18,16 +18,13 @@ class AdminController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
-
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
             return redirect()->intended('backend'); // 登录成功后重定向到 dashboard
         }
 
-        return back()->withErrors([
-            'email' => '提供的凭证不匹配我们的记录。',
-        ]);
+        return redirect()->back()->withErrors(['msg' => '登入錯誤']);
     }
 
     // logout

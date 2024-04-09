@@ -11,7 +11,7 @@
             <div class="card mb-4">
                 <div class="card-header">
                     <i class="fas fa-table me-1"></i>
-                    使用者管理
+                    管理者管理
                 </div>
                 <div class="card-body">
                     <table class="table table-bordered" style="width: 100%" id="dataTable">
