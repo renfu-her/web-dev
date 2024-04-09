@@ -83,6 +83,7 @@
                 {
                     data: 'user_group',
                     name: 'user_group',
+                    className: "min-tablet-l"
                 },
                 {
                     data: 'action',
